@@ -58,7 +58,7 @@ public class FoodStorageGoodController {
     @DeleteMapping(path = "{id}")
     public ResponseEntity<Basket> deleteBasketById(@PathVariable Integer id) {
         Basket presentBasket = basketsService.getBasketById(id);
-        if (presentBasket!= null) {
+        if (presentBasket != null) {
             return ResponseEntity.ok(basketsService.deleteBasketById(id));
         } else {
             return ResponseEntity.notFound().build();

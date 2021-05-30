@@ -32,7 +32,7 @@ public class FoodStorageGood {
     protected Integer id;
 
     public FoodStorageGood(final double sizeInLiters, final  double weightInGrams, final double priceInUah,
-                           final Colour colour, final Material material, final Country countryOfOrigin){
+                           final Colour colour, final Material material, final Country countryOfOrigin) {
         this(sizeInLiters, weightInGrams, priceInUah, colour, material, countryOfOrigin, null);
     }
 }

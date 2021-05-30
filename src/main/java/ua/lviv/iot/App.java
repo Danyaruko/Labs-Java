@@ -2,7 +2,13 @@ package ua.lviv.iot;
 
 import ua.lviv.iot.foodstoragegoods.manager.ShopManager;
 import ua.lviv.iot.foodstoragegoods.manager.SortOrder;
-import ua.lviv.iot.foodstoragegoods.models.*;
+import ua.lviv.iot.foodstoragegoods.models.Basket;
+import ua.lviv.iot.foodstoragegoods.models.Lunchbox;
+import ua.lviv.iot.foodstoragegoods.models.Barrel;
+import ua.lviv.iot.foodstoragegoods.models.Material;
+import ua.lviv.iot.foodstoragegoods.models.Colour;
+import ua.lviv.iot.foodstoragegoods.models.Country;
+import ua.lviv.iot.foodstoragegoods.models.Utility;
 
 import java.util.Arrays;
 

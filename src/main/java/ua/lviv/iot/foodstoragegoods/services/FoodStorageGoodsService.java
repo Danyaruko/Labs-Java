@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Service
 public class FoodStorageGoodsService {
     private AtomicInteger id = new AtomicInteger(0);
-    private Map<Integer, Basket> basketsMap = new HashMap<Integer,Basket>();
+    private Map<Integer, Basket> basketsMap = new HashMap<Integer, Basket>();
 
     public List<Basket> getBaskets() {
         return basketsMap.values().stream().collect(Collectors.toList());
