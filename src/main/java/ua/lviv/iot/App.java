@@ -1,12 +1,25 @@
+package ua.lviv.iot;
+
 import ua.lviv.iot.foodstoragegoods.manager.ShopManager;
 import ua.lviv.iot.foodstoragegoods.manager.SortOrder;
-import ua.lviv.iot.foodstoragegoods.models.*;
+import ua.lviv.iot.foodstoragegoods.models.Basket;
+import ua.lviv.iot.foodstoragegoods.models.Lunchbox;
+import ua.lviv.iot.foodstoragegoods.models.Barrel;
+import ua.lviv.iot.foodstoragegoods.models.Material;
+import ua.lviv.iot.foodstoragegoods.models.Colour;
+import ua.lviv.iot.foodstoragegoods.models.Country;
+import ua.lviv.iot.foodstoragegoods.models.Utility;
 
 import java.util.Arrays;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
 public class App {
     public static void main(String[] args) {
+        SpringApplication.run(App.class, args);
+
         Basket lukoshko = new Basket(20, 500, 100, Colour.WOOD, Material.WOOD_BARK,
                                      Country.RUSSIA, Utility.OUTDOOR_ALLOWED, 2);
         Barrel bertha = new Barrel(200, 15000, 500, Colour.BLUE, Material.WOOD,
@@ -25,7 +38,7 @@ public class App {
         serega.sortByColour(SortOrder.ASC);
         serega.getAllGoods().forEach(System.out::println);
 
-        System.out.println("\nList sorted by weight:");
+        System.out.println("\nList sorted by weight(descending):");
         serega.sortByWeight(SortOrder.DESC);
         serega.getAllGoods().forEach(System.out::println);
 
