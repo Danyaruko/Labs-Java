@@ -3,11 +3,13 @@ package ua.lviv.iot.foodstoragegoods.models;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import lombok.NonNull;
 
 @Data
 @NoArgsConstructor
 @ToString(callSuper = true)
 public class TraditionalFoodStorageItem extends FoodStorageGood {
+    @NonNull
     protected Utility utility;
 
     public TraditionalFoodStorageItem(final double sizeInLiters, final double weightInGrams,
